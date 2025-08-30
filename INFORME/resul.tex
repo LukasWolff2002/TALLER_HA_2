@@ -2,18 +2,20 @@
 
 \subsection{Metodología}
 
-En primer lugar se realizo un analisis estadistico de la resistencia mecanica, basado en la norma \cite{NCh1998}, la cual tiene como objetivo determinar la conformidad de los resultados de la resistencia real a comprecion respecto a la especificada.
+\subsubsection{Análisis estadístico de la resistencia mecánica}
 
-Se requieren los siguientes requicitos base para poder aplicar la norma:
+En primer lugar, se realizó un análisis estadístico de la resistencia mecánica, basado en la norma \cite{NCh1998}, cuyo objetivo es determinar la conformidad de los resultados de la resistencia real a compresión respecto de la especificada.
+
+Para poder aplicar la norma, se deben cumplir los siguientes requisitos básicos:
 
 \begin{itemize}
-    \item Toma de muestras al azar
-    \item Toma de muestras entre el 10\% y 90\% de decarga del camion mixer
-    \item Tamaño superior a 1,5 veces nesesario
-    \item Generar al menos 3 probetas por muestra, 1 a 7 dias y el resto a 28 dias.
+    \item Toma de muestras al azar.
+    \item Toma de muestras entre el 10\% y el 90\% de la descarga del camión mixer.
+    \item Tamaño de muestra superior a 1,5 veces el necesario.
+    \item Generar al menos 3 probetas por muestra: una ensayada a 7 días y las restantes a 28 días.
 \end{itemize}
 
-La tabla \ref{tab:muestreo} detalla el numero y volumen de muestras segun la procedencia del hormigon.
+La Tabla \ref{tab:muestreo} detalla el número y volumen de muestras según la procedencia del hormigón.
 
 \begin{table}[H]
 \centering
@@ -21,36 +23,34 @@ La tabla \ref{tab:muestreo} detalla el numero y volumen de muestras segun la pro
 \hline
 \textbf{Procedencia del hormigón} & \multicolumn{2}{c|}{\textbf{Volumen de hormigón de la obra, m$^3$}} \\ \hline
                                   & $> 250$ & $\leq 250$ \\ \hline
-\textbf{Fabricado en obra}        &         &           \\ \hline
+\textbf{Fabricado en obra}        &         &            \\ \hline
 Volumen máximo de hormigón por muestra & 100     & 50        \\ \hline
 Número mínimo de muestras              & 5       & 3         \\ \hline
-\textbf{De central hormigonera}   &         &           \\ \hline
+\textbf{De central hormigonera}   &         &            \\ \hline
 Volumen máximo de hormigón por muestra & 150     & 75        \\ \hline
 Número mínimo de muestras              & 5       & 3         \\ \hline
 \end{tabular}
-\caption{Requisitos de muestreo según la procedencia y volumen de hormigón.}
+\caption{Requisitos de muestreo según la procedencia y el volumen de hormigón.}
 \label{tab:muestreo}
 \end{table}
 
-Ademas, el plan de muestreo debe ser especificado en la norma de diseño o especificacion de la obra, de lo contrario considerar que;
+Además, el plan de muestreo debe estar especificado en la norma de diseño o en la especificación de la obra. En caso contrario, se debe considerar lo siguiente:
 
 \begin{itemize}
-    \item Pavimentos: testigo cada 1000 m$^2$ con minimo 3.
-    \item General: testigos por zona
+    \item Pavimentos: un testigo cada 1000 m$^2$, con un mínimo de 3.
+    \item General: testigos por zona.
 \end{itemize}
 
-\subsubsection{Analisis estadistico resistencia mecanica}
-
-Si se tiene un N mayor a 10 muestras, se puede considerar la resistencia de cada lote como satisfactoria si se cumple que:
+Si se dispone de un número $N$ mayor a 10 muestras, se puede considerar que la resistencia de cada lote es satisfactoria si se cumple lo siguiente:
 
 \begin{itemize}
-    \item Global: $f_3 \geq f_c + k_1$
-    \item Individual: $f_1 \geq f_o = f_c - k_2$
+    \item Criterio global: $f_3 \geq f_c + k_1$
+    \item Criterio individual: $f_i \geq f_0 = f_c - k_2$
 \end{itemize}
 
-Donde, $f_3$ corresponde a la resistencia media de tres muestras consecutivas a 28 dias, $f_c$ es la resistencia especificada, $f_1$ es la resistencia individual de cada muestra y $f_o$ es la resistencia inferior para cada $f_i$ a 28 dias.
+Donde $f_3$ corresponde a la resistencia media de tres muestras consecutivas a 28 días, $f_c$ es la resistencia especificada, $f_i$ es la resistencia individual de cada muestra y $f_0$ es la resistencia mínima aceptable para cada $f_i$ a 28 días.
 
-Para los valores de $k_1$ y $k_2$ ver tabla \ref{tab:valoresk}
+Los valores de $k_1$ y $k_2$ se indican en la Tabla \ref{tab:valoresk}.
 
 \begin{table}[H]
 \centering
@@ -62,14 +62,14 @@ Para los valores de $k_1$ y $k_2$ ver tabla \ref{tab:valoresk}
                     & $k_{2}$ & 0,6 & 1,2 & 1,9 & 2,5 \\ \hline
 \multirow{2}{*}{10} & $k_{1}$ & 0   & 0   & 0   & 0   \\ \cline{2-6}
                     & $k_{2}$ & 0,9 & 1,7 & 2,6 & 3,5 \\ \hline
-\multirow{2}{*}{20} & $k_{1}$ & -0,4 & - 0.7   & -1,1 & - 1,5 \\ \cline{2-6}
+\multirow{2}{*}{20} & $k_{1}$ & 0,4 & 0,7 & 1,1 & 1,5 \\ \cline{2-6}
                     & $k_{2}$ & 1,4 & 2,7 & 4,1 & 5,5 \\ \hline
 \end{tabular}
 \caption{Valores de $k_{1}$ y $k_{2}$ según la fracción defectuosa aceptada y el grado de hormigón.}
 \label{tab:valoresk}
 \end{table}
 
-Finalmente, la tabla \ref{tab:concluciones} muestra las cncluciones que se pueden lograr del ensayo.
+La Tabla \ref{tab:conclusiones} resume las conclusiones posibles en función de los antecedentes.
 
 \begin{table}[H]
 \centering
@@ -79,15 +79,209 @@ Finalmente, la tabla \ref{tab:concluciones} muestra las cncluciones que se puede
 $f_{3} \geq f_{c} + k_{1}$ & $f_{i} \geq f_{0}$ & 
 El hormigón cumple la resistencia especificada & \\ \hline
 
-$f_{3} < f_{c} + k_{1}$ & $f_{1} \geq f_{0}$ & 
+$f_{3} < f_{c} + k_{1}$ & $f_{i} \geq f_{0}$ & 
 El hormigón no cumple la resistencia especificada & 
-Informar a los Proyectistas Estructurales y considerar las penalizaciones establecidas en el Contrato y sus Documentos anexos. \\ \hline
+Informar a los proyectistas estructurales y considerar las penalizaciones establecidas en el contrato y sus documentos anexos. \\ \hline
 
  & $f_{i} < f_{0}$ & 
 El hormigón no cumple la resistencia especificada y cada resultado defectuoso debe ser considerado como un riesgo potencial & 
 Adoptar las medidas indicadas en A.4 \\ \hline
 \end{tabular}
 \caption{Conclusiones y recomendaciones en función de los antecedentes de resistencia del hormigón.}
-\label{tab:concluciones}
+\label{tab:conclusiones}
 \end{table}
 
+Adicionalmente, se puede realizar un análisis considerando el total de muestras. El ensayo se considera satisfactorio si se cumple que:
+
+\begin{itemize}
+    \item Criterio global: $f_{m} \geq f_{c} + s \cdot t$
+    \item Criterio individual: $f_{i} \geq f_{0} = f_c - k_2$
+\end{itemize}
+
+Donde $s$ corresponde a la desviación estándar de la muestra, y el valor $t$ puede calcularse a partir de los datos de la Tabla 4 de la norma \cite{NCh1998}.
+
+La Tabla \ref{tab:conclusiones2} muestra las conclusiones obtenidas en este análisis.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|p{6cm}|p{6cm}|}
+\hline
+\textbf{Antecedentes} &  & \textbf{Conclusiones} & \textbf{Recomendaciones} \\ \hline
+$f_{m} \geq f_{c} + s \cdot t$ & $f_{i} \geq f_{0}$ & 
+El hormigón cumple la resistencia especificada & \\ \hline
+
+$f_{m} < f_{c} + s \cdot t$ & $f_{i} \geq f_{0}$ & 
+El hormigón no cumple la resistencia especificada & 
+Informar a los proyectistas estructurales y considerar las penalizaciones establecidas en el contrato y sus documentos anexos. \\ \hline
+
+ & $f_{i} < f_{0}$ & 
+El hormigón no cumple la resistencia especificada y cada resultado defectuoso debe ser considerado como un riesgo potencial & 
+Adoptar las medidas indicadas en A.4 \\ \hline
+\end{tabular}
+\caption{Conclusiones y recomendaciones considerando $f_{m}$, $f_{c}$, $s$, $t$ y $f_{0}$.}
+\label{tab:conclusiones2}
+\end{table}
+
+Finalmente, si se dispone de por lo menos 10 muestras distitnas, con dos o mas probetas por cada una, se puede realizar una evaluacion del nivel de control de los ensayos.
+
+En primer lugar es nesesario calcular el intervalo promedio R:
+
+\begin{equation}
+    \bar{R} = \frac{\sum R_i}{N}
+\end{equation}
+
+Donde:
+
+\begin{itemize}
+    \item $R_i = f_{max,i} - f_{min,i}$ es el rango de cada muestra.
+    \item $N$ es el número total de muestras.
+\end{itemize}
+
+A continuación, se debe calcular la desviacion normal de los ensayos:
+
+\begin{equation}
+    s_1 = \frac{\bar{R}}{d_2}
+\end{equation}
+
+Para el valor de d2, considerar los datos de la tabla \ref{tab:d2}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Número de probetas, $n_{0}$} & \textbf{$d_{2}$} \\ \hline
+2 & 1,128 \\ \hline
+3 & 1,693 \\ \hline
+4 & 2,059 \\ \hline
+5 & 2,326 \\ \hline
+6 & 2,534 \\ \hline
+\end{tabular}
+\caption{Valores de $d_{2}$ en función del número de probetas $n_{0}$.}
+\label{tab:d2}
+\end{table}
+
+Finalmente se calcula el coeficiente de vaiacion de ensayo:
+
+\begin{equation}
+    V_1 = \frac{s_1}{f_m} \cdot 100\%
+\end{equation}
+
+Donde la tabla \ref{tab:conclusiones3} muestra las conclusiones y recomendaciones en función del coeficiente de variación obtenido.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\textbf{$V_{1}$ (\%)} & \textbf{Nivel de control de ensayos} \\ \hline
+$0 \leq V_{1} \leq 3,0$ & Excelente \\ \hline
+$3,0 < V_{1} \leq 4,0$ & Muy bueno \\ \hline
+$4,0 < V_{1} \leq 5,0$ & Bueno \\ \hline
+$5,0 < V_{1} \leq 6,0$ & Aceptable \\ \hline
+$6,0 < V_{1}$ & Deficiente \\ \hline
+\end{tabular}
+\caption{Clasificación del nivel de control de ensayos según el valor de $V_{1}$.}
+\label{tab:conclusiones3}
+\end{table}
+
+
+\subsubsection{Analisis de Testigos}
+
+La norma \cite{NCh1171-1-2001} establece los requicitos de analisis para la extraccion de testigos. Se deben cumplir los siguientes requerimientos:
+
+\begin{itemize}
+    \item El diametro debe ser mayor que el doble del diametro de maximo agregado
+    \item Altura tal que la esbeltez sea entre 1.0 y 2.0
+    \item La resistencia de extraccion debe ser mayor a 8 MPa y mayor a 14 dias.
+    \item Ademas, los limites fisicos de extraccion son especificados por la norma.
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{Resultados}
+
+Los datos de entrada son un hormigon G55 con un porcentaje de defectuoso del 20\%, ademas, se tienen las siguientes muestras y probetas (tabla \ref{tab:datosentrada}).
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Correlativo} & \textbf{7 días [MPa]} & \textbf{28 días [MPa]} & \textbf{28 días [MPa]} \\ \hline
+1  & 41.45 & 52.8  & 54.6  \\ \hline
+2  & 40.2  & 57.11 & 56.6  \\ \hline
+3  & 43.5  & 52.35 & 55.18 \\ \hline
+4  & 41    & 55.25 & 54.2  \\ \hline
+5  & 40    & 54.48 & 53.82 \\ \hline
+6  & 41    & 55.3  & 52.08 \\ \hline
+7  & 43.5  & 51    & 53.82 \\ \hline
+8  & 41    & 48.4  & 49.9  \\ \hline
+9  & 40    & 49.5  & 45.6  \\ \hline
+10 & 40.2  & 52.56 & 47.88 \\ \hline
+11 & 43.5  & 57.11 & 56.6  \\ \hline
+12 & 40    & 52.35 & 52.08 \\ \hline
+13 & 41    & 55.25 & 53.82 \\ \hline
+14 & 43.5  & 54.48 & 53.82 \\ \hline
+15 & 41    & 55.3  & 57.79 \\ \hline
+16 & 40    & 58.15 & 56.6  \\ \hline
+17 & 40.2  & 55.25 & 55.18 \\ \hline
+18 & 43.5  & 52.56 & 53.82 \\ \hline
+19 & 41    & 48.4  & 45.68 \\ \hline
+20 & 40    & 49.6  & 47.7  \\ \hline
+\end{tabular}
+\caption{Resultados de resistencia a compresión de probetas a 7 y 28 días.}
+\label{tab:datosentrada}
+\end{table}
+
+Luego, se obtienen los siguientes resultados: 
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{Probeta} & \textbf{Cumple $f_c - k_2$} & \textbf{Cumple $f_3 \geq f_c + k_1$} \\ \hline
+1  & Sí & Sí \\ \hline
+2  & Sí & Sí \\ \hline
+3  & Sí & Sí \\ \hline
+4  & Sí & Sí \\ \hline
+5  & Sí & No \\ \hline
+6  & Sí & No \\ \hline
+7  & Sí & No \\ \hline
+8  & No & No \\ \hline
+9  & No & No \\ \hline
+10 & Sí & No \\ \hline
+11 & Sí & Sí \\ \hline
+12 & Sí & Sí \\ \hline
+13 & Sí & Sí \\ \hline
+14 & Sí & Sí \\ \hline
+15 & Sí & Sí \\ \hline
+16 & Sí & Sí \\ \hline
+17 & Sí & No \\ \hline
+18 & Sí & No \\ \hline
+19 & No & - \\ \hline
+20 & No & - \\ \hline
+\end{tabular}
+\caption{Resultados de cumplimiento de las condiciones estadísticas de resistencia del hormigón.}
+\label{tab:cumplimiento}
+\end{table}
+
+Ademas, el criterio $f_m \geq f_c + st$ no se cumple. De esta forma, se puede concluir que es nesesario adoptar las medidas indicadas en A.4. de la norma \cite{NCh1998}.
+
+Se concluye que:
+
+\begin{itemize}
+    \item Existe riesgo estructural, y el hormigon afectado debe ser sometido a analisis
+    \item Se debe comprobar la validex del ensayo, ademas de extraer testigos de hormigon endurecido, identificar zonas comprometidas y demas.
+    \item \textbf{CONTINUAAAAAR}
+\end{itemize}
+
+Adicionalmente, se calcula el nivel de control del ensayo, donde se concluye que su calidad es excelente.
+
+Al modificar el porcentaje de defectuoso, no se genera ningun cambio al aumentarlo, ya que la dosificacion entregada se encuentra en el limite superior (20\%), de manera contraria, si se reduce tal porcentaje, se reduce el numero de muetras aprobadas, ya que los factores k aumentan, incrementando la diferencia de la desigualdad. Por ejemplo, incialmente se tienen 26 muestraqs aprobadas considerando los dos criterior individuales, pero si el porcentaje de defectuso cambia a 5\%, se tienen 15 probetas aprobadas.
