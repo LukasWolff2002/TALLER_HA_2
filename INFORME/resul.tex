@@ -2,3 +2,92 @@
 
 \subsection{Metodología}
 
+En primer lugar se realizo un analisis estadistico de la resistencia mecanica, basado en la norma \cite{NCh1998}, la cual tiene como objetivo determinar la conformidad de los resultados de la resistencia real a comprecion respecto a la especificada.
+
+Se requieren los siguientes requicitos base para poder aplicar la norma:
+
+\begin{itemize}
+    \item Toma de muestras al azar
+    \item Toma de muestras entre el 10\% y 90\% de decarga del camion mixer
+    \item Tamaño superior a 1,5 veces nesesario
+    \item Generar al menos 3 probetas por muestra, 1 a 7 dias y el resto a 28 dias.
+\end{itemize}
+
+La tabla \ref{tab:muestreo} detalla el numero y volumen de muestras segun la procedencia del hormigon.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Procedencia del hormigón} & \multicolumn{2}{c|}{\textbf{Volumen de hormigón de la obra, m$^3$}} \\ \hline
+                                  & $> 250$ & $\leq 250$ \\ \hline
+\textbf{Fabricado en obra}        &         &           \\ \hline
+Volumen máximo de hormigón por muestra & 100     & 50        \\ \hline
+Número mínimo de muestras              & 5       & 3         \\ \hline
+\textbf{De central hormigonera}   &         &           \\ \hline
+Volumen máximo de hormigón por muestra & 150     & 75        \\ \hline
+Número mínimo de muestras              & 5       & 3         \\ \hline
+\end{tabular}
+\caption{Requisitos de muestreo según la procedencia y volumen de hormigón.}
+\label{tab:muestreo}
+\end{table}
+
+Ademas, el plan de muestreo debe ser especificado en la norma de diseño o especificacion de la obra, de lo contrario considerar que;
+
+\begin{itemize}
+    \item Pavimentos: testigo cada 1000 m$^2$ con minimo 3.
+    \item General: testigos por zona
+\end{itemize}
+
+\subsubsection{Analisis estadistico resistencia mecanica}
+
+Si se tiene un N mayor a 10 muestras, se puede considerar la resistencia de cada lote como satisfactoria si se cumple que:
+
+\begin{itemize}
+    \item Global: $f_3 \geq f_c + k_1$
+    \item Individual: $f_1 \geq f_o = f_c - k_2$
+\end{itemize}
+
+Donde, $f_3$ corresponde a la resistencia media de tres muestras consecutivas a 28 dias, $f_c$ es la resistencia especificada, $f_1$ es la resistencia individual de cada muestra y $f_o$ es la resistencia inferior para cada $f_i$ a 28 dias.
+
+Para los valores de $k_1$ y $k_2$ ver tabla \ref{tab:valoresk}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+\textbf{Fracción defectuosa aceptada, \%} &  & \multicolumn{4}{c|}{\textbf{Grado de hormigón}} \\ \hline
+ &  & H5 & H10 & H15 & H20 o superior \\ \hline
+\multirow{2}{*}{5}  & $k_{1}$ & 0,3 & 0,5 & 0,8 & 1,0 \\ \cline{2-6}
+                    & $k_{2}$ & 0,6 & 1,2 & 1,9 & 2,5 \\ \hline
+\multirow{2}{*}{10} & $k_{1}$ & 0   & 0   & 0   & 0   \\ \cline{2-6}
+                    & $k_{2}$ & 0,9 & 1,7 & 2,6 & 3,5 \\ \hline
+\multirow{2}{*}{20} & $k_{1}$ & -0,4 & - 0.7   & -1,1 & - 1,5 \\ \cline{2-6}
+                    & $k_{2}$ & 1,4 & 2,7 & 4,1 & 5,5 \\ \hline
+\end{tabular}
+\caption{Valores de $k_{1}$ y $k_{2}$ según la fracción defectuosa aceptada y el grado de hormigón.}
+\label{tab:valoresk}
+\end{table}
+
+Finalmente, la tabla \ref{tab:concluciones} muestra las cncluciones que se pueden lograr del ensayo.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|p{6cm}|p{6cm}|}
+\hline
+\textbf{Antecedentes} &  & \textbf{Conclusiones} & \textbf{Recomendaciones} \\ \hline
+$f_{3} \geq f_{c} + k_{1}$ & $f_{i} \geq f_{0}$ & 
+El hormigón cumple la resistencia especificada & \\ \hline
+
+$f_{3} < f_{c} + k_{1}$ & $f_{1} \geq f_{0}$ & 
+El hormigón no cumple la resistencia especificada & 
+Informar a los Proyectistas Estructurales y considerar las penalizaciones establecidas en el Contrato y sus Documentos anexos. \\ \hline
+
+ & $f_{i} < f_{0}$ & 
+El hormigón no cumple la resistencia especificada y cada resultado defectuoso debe ser considerado como un riesgo potencial & 
+Adoptar las medidas indicadas en A.4 \\ \hline
+\end{tabular}
+\caption{Conclusiones y recomendaciones en función de los antecedentes de resistencia del hormigón.}
+\label{tab:concluciones}
+\end{table}
+
