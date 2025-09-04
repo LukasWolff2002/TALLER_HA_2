@@ -6,12 +6,12 @@
 
 En primer lugar, se realizó un análisis estadístico de la resistencia mecánica, basado en la norma \cite{NCh1998}, cuyo objetivo es determinar la conformidad de los resultados de la resistencia real a compresión respecto de la especificada.
 
-Para poder aplicar la norma, se deben cumplir los siguientes requisitos básicos:
+Para aplicar la norma, se deben cumplir los siguientes requisitos básicos:
 
 \begin{itemize}
     \item Toma de muestras al azar.
-    \item Toma de muestras entre el 10\% y el 90\% de la descarga del camión mixer.
-    \item Tamaño de muestra superior a 1,5 veces el necesario.
+    \item Extracción de muestras entre el 10\% y el 90\% de la descarga del camión mixer.
+    \item Tamaño de muestra superior en al menos 1,5 veces al necesario.
     \item Generar al menos 3 probetas por muestra: una ensayada a 7 días y las restantes a 28 días.
 \end{itemize}
 
@@ -34,23 +34,23 @@ Número mínimo de muestras              & 5       & 3         \\ \hline
 \label{tab:muestreo}
 \end{table}
 
-Además, el plan de muestreo debe estar especificado en la norma de diseño o en la especificación de la obra. En caso contrario, se debe considerar lo siguiente:
+Además, el plan de muestreo debe estar definido en la norma de diseño o en las especificaciones de la obra. En caso contrario, se debe considerar lo siguiente:
 
 \begin{itemize}
     \item Pavimentos: un testigo cada 1000 m$^2$, con un mínimo de 3.
-    \item General: testigos por zona.
+    \item General: testigos distribuidos por zona.
 \end{itemize}
 
-Si se dispone de un número $N$ mayor a 10 muestras, se puede considerar que la resistencia de cada lote es satisfactoria si se cumple lo siguiente:
+Si se dispone de un número $N$ mayor a 10 muestras, se considera que la resistencia de cada lote es satisfactoria si se cumple lo siguiente:
 
 \begin{itemize}
     \item Criterio global: $f_3 \geq f_c + k_1$
     \item Criterio individual: $f_i \geq f_0 = f_c - k_2$
 \end{itemize}
 
-Donde $f_3$ corresponde a la resistencia media de tres muestras consecutivas a 28 días, $f_c$ es la resistencia especificada, $f_i$ es la resistencia individual de cada muestra y $f_0$ es la resistencia mínima aceptable para cada $f_i$ a 28 días.
+Donde $f_3$ corresponde a la resistencia media de tres muestras consecutivas a 28 días, $f_c$ es la resistencia especificada, $f_i$ la resistencia individual de cada muestra y $f_0$ la resistencia mínima aceptable para cada $f_i$ a 28 días. 
 
-Los valores de $k_1$ y $k_2$ se indican en la Tabla \ref{tab:valoresk}.
+Los valores de $k_1$ y $k_2$ se presentan en la Tabla \ref{tab:valoresk}.
 
 \begin{table}[H]
 \centering
@@ -98,7 +98,7 @@ Adicionalmente, se puede realizar un análisis considerando el total de muestras
     \item Criterio individual: $f_{i} \geq f_{0} = f_c - k_2$
 \end{itemize}
 
-Donde $s$ corresponde a la desviación estándar de la muestra, y el valor $t$ puede calcularse a partir de los datos de la Tabla 4 de la norma \cite{NCh1998}.
+Donde $s$ corresponde a la desviación estándar de la muestra y el valor $t$ se calcula a partir de los datos de la Tabla 4 de la norma \cite{NCh1998}.
 
 La Tabla \ref{tab:conclusiones2} muestra las conclusiones obtenidas en este análisis.
 
@@ -122,9 +122,9 @@ Adoptar las medidas indicadas en A.4 \\ \hline
 \label{tab:conclusiones2}
 \end{table}
 
-Finalmente, si se dispone de por lo menos 10 muestras distitnas, con dos o mas probetas por cada una, se puede realizar una evaluacion del nivel de control de los ensayos.
+Finalmente, si se dispone de al menos 10 muestras distintas, con dos o más probetas por cada una, se puede evaluar el nivel de control de los ensayos.
 
-En primer lugar es nesesario calcular el intervalo promedio R:
+En primer lugar, es necesario calcular el intervalo promedio $R$:
 
 \begin{equation}
     \bar{R} = \frac{\sum R_i}{N}
@@ -137,13 +137,13 @@ Donde:
     \item $N$ es el número total de muestras.
 \end{itemize}
 
-A continuación, se debe calcular la desviacion normal de los ensayos:
+A continuación, se debe calcular la desviación normal de los ensayos:
 
 \begin{equation}
     s_1 = \frac{\bar{R}}{d_2}
 \end{equation}
 
-Para el valor de d2, considerar los datos de la tabla \ref{tab:d2}
+Para el valor de $d_2$, considerar los datos de la Tabla \ref{tab:d2}.
 
 \begin{table}[H]
 \centering
@@ -160,13 +160,13 @@ Para el valor de d2, considerar los datos de la tabla \ref{tab:d2}
 \label{tab:d2}
 \end{table}
 
-Finalmente se calcula el coeficiente de vaiacion de ensayo:
+Finalmente, se calcula el coeficiente de variación de ensayo:
 
 \begin{equation}
     V_1 = \frac{s_1}{f_m} \cdot 100\%
 \end{equation}
 
-Donde la tabla \ref{tab:conclusiones3} muestra las conclusiones y recomendaciones en función del coeficiente de variación obtenido.
+La Tabla \ref{tab:conclusiones3} muestra las conclusiones y recomendaciones en función del coeficiente de variación obtenido.
 
 \begin{table}[H]
 \centering
@@ -183,64 +183,52 @@ $6,0 < V_{1}$ & Deficiente \\ \hline
 \label{tab:conclusiones3}
 \end{table}
 
+\subsubsection{Análisis de testigos}
 
-\subsubsection{Analisis de Testigos}
-
-La norma \cite{NCh1171-1-2001} establece los requicitos de analisis para la extraccion de testigos. Se deben cumplir los siguientes requerimientos:
+La norma \cite{NCh1171-1-2001} establece los requisitos de análisis para la extracción de testigos. Se deben cumplir las siguientes condiciones:
 
 \begin{itemize}
-    \item El diametro debe ser mayor que el doble del diametro de maximo agregado
-    \item Altura tal que la esbeltez sea entre 1.0 y 2.0
-    \item La resistencia de extraccion debe ser mayor a 8 MPa y mayor a 14 dias.
-    \item Ademas, los limites fisicos de extraccion son especificados por la norma.
+    \item El diámetro del testigo debe ser mayor que el doble del diámetro máximo del agregado.
+    \item La altura debe ser tal que la esbeltez (altura/diámetro) esté entre 1,0 y 2,0.
+    \item La resistencia del hormigón de extracción debe ser mayor a 8 MPa y tener al menos 14 días.
+    \item Además, los límites físicos de extracción están especificados por la norma.
 \end{itemize}
-
-
-
-
-
-
-
-
-
-
-
 
 \subsection{Resultados}
 
-Los datos de entrada son un hormigon G55 con un porcentaje de defectuoso del 20\%, ademas, se tienen las siguientes muestras y probetas (tabla \ref{tab:datosentrada}).
+Los datos de entrada corresponden a un hormigón G55 con una fracción defectuosa del 20\%. Además, se cuenta con las siguientes muestras y probetas (Tabla \ref{tab:datosentrada}).
 
 \begin{table}[H]
 \centering
 \begin{tabular}{|c|c|c|c|}
 \hline
 \textbf{Correlativo} & \textbf{7 días [MPa]} & \textbf{28 días [MPa]} & \textbf{28 días [MPa]} \\ \hline
-1  & 41.45 & 52.8  & 54.6  \\ \hline
-2  & 40.2  & 57.11 & 56.6  \\ \hline
-3  & 43.5  & 52.35 & 55.18 \\ \hline
-4  & 41    & 55.25 & 54.2  \\ \hline
-5  & 40    & 54.48 & 53.82 \\ \hline
-6  & 41    & 55.3  & 52.08 \\ \hline
-7  & 43.5  & 51    & 53.82 \\ \hline
-8  & 41    & 48.4  & 49.9  \\ \hline
-9  & 40    & 49.5  & 45.6  \\ \hline
-10 & 40.2  & 52.56 & 47.88 \\ \hline
-11 & 43.5  & 57.11 & 56.6  \\ \hline
-12 & 40    & 52.35 & 52.08 \\ \hline
-13 & 41    & 55.25 & 53.82 \\ \hline
-14 & 43.5  & 54.48 & 53.82 \\ \hline
-15 & 41    & 55.3  & 57.79 \\ \hline
-16 & 40    & 58.15 & 56.6  \\ \hline
-17 & 40.2  & 55.25 & 55.18 \\ \hline
-18 & 43.5  & 52.56 & 53.82 \\ \hline
-19 & 41    & 48.4  & 45.68 \\ \hline
-20 & 40    & 49.6  & 47.7  \\ \hline
+1  & 41.45 & 52.80 & 54.60 \\ \hline
+2  & 40.20 & 57.11 & 56.60 \\ \hline
+3  & 43.50 & 52.35 & 55.18 \\ \hline
+4  & 41.00 & 55.25 & 54.20 \\ \hline
+5  & 40.00 & 54.48 & 53.82 \\ \hline
+6  & 41.00 & 55.30 & 52.08 \\ \hline
+7  & 43.50 & 51.00 & 53.82 \\ \hline
+8  & 41.00 & 48.40 & 49.90 \\ \hline
+9  & 40.00 & 49.50 & 45.60 \\ \hline
+10 & 40.20 & 52.56 & 47.88 \\ \hline
+11 & 43.50 & 57.11 & 56.60 \\ \hline
+12 & 40.00 & 52.35 & 52.08 \\ \hline
+13 & 41.00 & 55.25 & 53.82 \\ \hline
+14 & 43.50 & 54.48 & 53.82 \\ \hline
+15 & 41.00 & 55.30 & 57.79 \\ \hline
+16 & 40.00 & 58.15 & 56.60 \\ \hline
+17 & 40.20 & 55.25 & 55.18 \\ \hline
+18 & 43.50 & 52.56 & 53.82 \\ \hline
+19 & 41.00 & 48.40 & 45.68 \\ \hline
+20 & 40.00 & 49.60 & 47.70 \\ \hline
 \end{tabular}
 \caption{Resultados de resistencia a compresión de probetas a 7 y 28 días.}
 \label{tab:datosentrada}
 \end{table}
 
-Luego, se obtienen los siguientes resultados: 
+Luego, se obtienen los resultados de cumplimiento que se presentan en la Tabla \ref{tab:cumplimiento}.
 
 \begin{table}[H]
 \centering
@@ -265,82 +253,45 @@ Luego, se obtienen los siguientes resultados:
 16 & Sí & Sí \\ \hline
 17 & Sí & No \\ \hline
 18 & Sí & No \\ \hline
-19 & No & - \\ \hline
-20 & No & - \\ \hline
+19 & No & -  \\ \hline
+20 & No & -  \\ \hline
 \end{tabular}
 \caption{Resultados de cumplimiento de las condiciones estadísticas de resistencia del hormigón.}
 \label{tab:cumplimiento}
 \end{table}
 
-Ademas, el criterio $f_m \geq f_c + st$ no se cumple. De esta forma, se puede concluir que es nesesario adoptar las medidas indicadas en A.4. de la norma \cite{NCh1998}.
+Además, el criterio $f_m \geq f_c + s t$ (esto es, $f_m \geq f_c + s \cdot t$) no se cumple. Por lo tanto, corresponde adoptar las medidas indicadas en el apartado A.4 de la norma \cite{NCh1998}.
 
 Se concluye que:
 
 \begin{itemize}
-    \item Existe riesgo estructural, y el hormigón afectado debe ser sometido a análisis.
-    \item Se debe comprobar la validez del ensayo, además de extraer testigos de hormigón endurecido para identificar las zonas comprometidas y evaluar la resistencia real del material en obra, de acuerdo con lo establecido en la \citep{NCh1171-1-2001,NCh1171-2-2001}.
+    \item Existe riesgo estructural y el hormigón afectado debe ser sometido a análisis.
+    \item Se debe comprobar la validez del ensayo y, adicionalmente, extraer testigos de hormigón endurecido para identificar zonas comprometidas y evaluar la resistencia real en obra, de acuerdo con \citep{NCh1171-1-2001,NCh1171-2-2001}.
     \item Es necesario reforzar el control de calidad en obra para evitar este tipo de incumplimientos, asegurando condiciones adecuadas de confección, transporte y curado del hormigón \citep{NCh170-2016}.
 \end{itemize}
 
-Adicionalmente, se calcula el nivel de control del ensayo, donde se concluye que la calidad es excelente, lo cual refleja que la variabilidad entre probetas es baja y que el proceso de muestreo fue realizado correctamente. Sin embargo, la resistencia promedio no cumple con el valor exigido, lo que confirma que la causa principal del incumplimiento se debe a la resistencia real del lote de hormigón y no a errores de ensayo.
+El nivel de control del ensayo resultó \textit{excelente}, lo que refleja baja variabilidad entre probetas y un correcto proceso de muestreo. No obstante, la resistencia promedio no cumple el valor exigido, lo que confirma que la causa principal del incumplimiento se debe a la resistencia real del lote y no a errores de ensayo.
 
-Al modificar el porcentaje de defectuoso, no se genera ningún cambio al aumentarlo, ya que la dosificación entregada se encuentra en el límite superior (20\%). En cambio, al reducir dicho porcentaje se observa una disminución en el número de muestras aprobadas. Esto se debe a que los factores estadísticos $k$ aumentan, incrementando la diferencia exigida en los criterios de aceptación y, por ende, reduciendo el número de resultados válidos. 
+Al modificar la fracción defectuosa, no se observa cambio al aumentarla, dado que ya se considera el límite superior (20\%). En cambio, al reducirla disminuye el número de muestras aprobadas, pues los factores estadísticos $k$ aumentan, incrementando la exigencia de los criterios de aceptación y reduciendo el número de resultados válidos.
 
-Por ejemplo, con 26 muestras iniciales todas aprobadas bajo el criterio del 20\% de defectuosos, si se restringe el límite a un 5\%, solo 15 probetas cumplen la condición. Esta sensibilidad demuestra la relevancia de definir correctamente la fracción defectuosa en la especificación de obra, pues influye directamente en la aceptación o rechazo de lotes y en la necesidad de aplicar medidas correctivas adicionales \citep{NCh1998}.
-
+Por ejemplo, con 26 muestras iniciales aprobadas bajo el 20\% de defectuosos, si se restringe a 5\%, solo 15 probetas cumplen la condición. Esta sensibilidad demuestra la relevancia de definir correctamente la fracción defectuosa en la especificación de obra, ya que influye directamente en la aceptación o rechazo de lotes y en la necesidad de aplicar medidas correctivas adicionales \citep{NCh1998}.
 
 \subsection{Discusión}
 
 \begin{enumerate}
-    \item El proceso de hidratación del cemento es fundamental en el desarrollo de la resistencia a compresión del hormigón, ya que genera las reacciones químicas entre el agua y los compuestos del cemento, formando compuestos que consolidan la matriz. A los 7 días, se ha alcanzado un porcentaje considerable de hidratación (60–70\%), lo que explica que el hormigón presente una resistencia significativa. A los 28 días se logra la resistencia característica de diseño, mientras que a los 90 días el proceso residual de hidratación incrementa la densificación de la microestructura y la durabilidad. Los factores externos como la temperatura y la humedad afectan la velocidad de estas reacciones: temperaturas altas aceleran la hidratación pero pueden inducir microfisuras y pérdidas de resistencia a largo plazo; temperaturas bajas retardan el proceso. Un curado con adecuada humedad asegura la continuidad de la hidratación, mientras que un curado con baja humedad relentiza el proceso, aumenta la porosidad y reduce la resistencia y la durabilidad \citep{NCh170-2016}.
-
-    \item En relación con la sustentabilidad del hormigón, los aditivos químicos más usados son los reductores de agua, superplastificantes e incorporadores de aire. Estos productos mejoran la trabajabilidad, aumentan la resistencia y reducen la relación agua/cemento, pero también tienen un impacto ambiental por su producción. Por ejemplo, estudios científicos señalan que la producción de superplastificantes a base de naftaleno formaldehído puede generar aproximadamente entre 50 y 80 kg CO$_2$ eq/tonelada de aditivo \citep{Habert2011,Flower2007}. Al incorporarlos en el hormigón, la huella de carbono total de la mezcla se incrementa en una magnitud menor al 1\%. Sin embargo, sus beneficios en reducción de agua y durabilidad permiten compensar este impacto al aumentar la vida útil de la estructura. Las especificaciones prescriptivas podrían limitar el uso de estos aditivos indicando cantidades máximas, mientras que las especificaciones por desempeño podrían regular solo el comportamiento final, por ejemplo, la resistencia a 28 días, por lo que su uso sería solo por cumplimiento de sustentabilidad \citep{NCh170-2016}.
-
-    \item Los ciclos de hielo-deshielo afectan al hormigón mediante la expansión del agua dentro de los poros capilares cuando se congela, lo que genera presiones internas que producen microfisuras y pérdida progresiva de resistencia y durabilidad. Una especificación prescriptiva puede exigir un contenido mínimo de aire incorporado,por ejemplo, entre 4\% y 6\%, para mejorar la resistencia al congelamiento, mientras que una especificación por desempeño diría directamente el requisito de superar ensayos de durabilidad frente a los cambios de ciclos. Ambas aproximaciones buscan mitigar el daño, aunque el enfoque por desempeño asegura mayor flexibilidad tecnológica y mejor adaptación a condiciones locales \citep{Powers1954,MehtaMonteiro2014}.
-
-    \item La microestructura del hormigón, dada por la distribución de poros, la densidad de la matriz y la presencia de microfisuras, influye directamente en su resistencia a compresión y durabilidad. Un hormigón con baja porosidad capilar y una matriz densa permite mayores resistencias mecánicas y menor permeabilidad frente a agentes tóxicos. Para evaluar esta microestructura, se pueden emplear diversas técnicas experimentales, como:  
+    \item El proceso de hidratación del cemento es fundamental para el desarrollo de la resistencia a compresión del hormigón, pues genera las reacciones entre el agua y los compuestos del cemento, consolidando la matriz. A los 7 días, suele alcanzarse un 60--70\% de hidratación, lo que explica resistencias significativas; a los 28 días se obtiene la resistencia característica, y a los 90 días la hidratación residual incrementa la densificación y la durabilidad. Factores externos como temperatura y humedad afectan la cinética: temperaturas altas aceleran la hidratación pero pueden inducir microfisuras y pérdidas de resistencia a largo plazo; temperaturas bajas la retardan. Un curado con adecuada humedad asegura continuidad de la hidratación; en cambio, baja humedad ralentiza el proceso, aumenta la porosidad y reduce resistencia y durabilidad \citep{NCh170-2016}.
+    
+    \item En términos de sustentabilidad, los aditivos más frecuentes (reductores de agua, superplastificantes e incorporadores de aire) mejoran la trabajabilidad, aumentan la resistencia y permiten disminuir la relación agua/cemento, aunque con un impacto ambiental asociado a su producción. Por ejemplo, se ha reportado que superplastificantes a base de naftaleno–formaldehído pueden aportar del orden de 50--80 kg CO$_2$ eq/ton de aditivo \citep{Habert2011,Flower2007}. En la mezcla final, este aporte suele ser menor al 1\% de la huella total, y sus beneficios en reducción de agua y mayor durabilidad tienden a compensarlo al extender la vida útil. Las especificaciones prescriptivas podrían limitar dosificaciones máximas; las de desempeño, en cambio, regulan resultados (p.ej., resistencia a 28 días), habilitando su uso si se cumple el criterio de sustentabilidad \citep{NCh170-2016}.
+    
+    \item Los ciclos hielo–deshielo dañan el hormigón por expansión del agua en poros capilares al congelarse, generando presiones internas, microfisuras y pérdida progresiva de resistencia y durabilidad. Una especificación prescriptiva puede exigir contenido mínimo de aire incorporado (p.ej., 4--6\%) para mejorar la resistencia al congelamiento; una de desempeño demandará superar ensayos de durabilidad específicos. Ambos enfoques mitigan el daño; el enfoque por desempeño favorece mayor flexibilidad y adaptación a condiciones locales \citep{Powers1954,MehtaMonteiro2014}.
+    
+    \item La microestructura (distribución de poros, densidad de la matriz y microfisuras) influye directamente en la resistencia y durabilidad. Para su evaluación se emplean, entre otras, las siguientes técnicas:
     \begin{itemize}
-        \item Microscopía electrónica de barrido (SEM): permite observar la morfología de los poros, la distribución de productos de hidratación y la presencia de microfisuras, entregando información cualitativa y cuantitativa de la estructura interna \citep{Diamond1999}.  
-        \item Porosimetría por intrusión de mercurio (MIP): cuantifica el tamaño y volumen de los poros en la matriz cementicia, lo que permite correlacionar la porosidad total con la resistencia y durabilidad del material \citep{Gallucci2012}.  
+        \item \textbf{Microscopía electrónica de barrido (SEM):} observa morfología de poros, distribución de productos de hidratación y microfisuras, con información cualitativa y cuantitativa \citep{Diamond1999}.
+        \item \textbf{Porosimetría por intrusión de mercurio (MIP):} cuantifica tamaño y volumen de poros, permitiendo correlacionar porosidad total con resistencia y durabilidad \citep{Gallucci2012}.
     \end{itemize}
-
-    \item Para este caso, la especificación por desempeño debe asegurar que el hormigón cumpla con los requisitos para estructuras en condiciones de exposición severa. En primer lugar, se debe garantizar la durabilidad, es decir, que el hormigón resista adecuadamente la acción de los sulfatos; esto puede comprobarse con ensayos acelerados de expansión donde la deformación no supere el 0.05\% a los seis meses. La resistencia a la compresión se debería exigir de al menos 40 MPa a 28 días, lo que asegura un buen desempeño estructural. La impermeabilidad puede verificarse mediante ensayos de penetración de agua,  limitando al menos 20 mm bajo presión. Respecto a la resistencia química, el hormigón debe mantener su integridad frente a soluciones de sulfatos, con pérdidas de resistencia menores al 20\%. Finalmente, el control de fisuración no debería superar los 0.2 mm, ya que aumentaría el ingreso de agentes tóxicos. Todos estos criterios, más los modelos de predicción de vida útil que consideren transporte de iones y carbonatación, permiten proyectar una durabilidad mínima de 50 años en estas condiciones \citep{NCh170-2016,ConcreteSociety2006}.
-
-    \item Una especificación técnica de hormigón por desempeño utilizada internacionalmente es la norma europea EN 206, la cual define requisitos de durabilidad y resistencia en función de las condiciones de exposición ambiental. Un ejemplo es su aplicación en el Puente de Oresund, que conecta Dinamarca y Suecia, expuesto a ambientes marinos extremos. En este proyecto se especificó que el hormigón debía cumplir una resistencia característica mínima de 50 MPa, limitar la penetración de cloruros por debajo de un límite determinado y demostrar un comportamiento satisfactorio en ensayos de ciclos de hielo-deshielo. Esta especificación se considera por desempeño ya que no fija la dosificación ni los materiales específicos, sino que establece criterios medibles de durabilidad y resistencia. Los métodos de evaluación incluyeron ensayos acelerados de penetración de cloruros, determinación de resistividad eléctrica y pruebas de resistencia a la compresión a 28 y 90 días. De esta manera, se garantizó que el hormigón cumpliera con los requisitos de vida útil y seguridad estructural en un ambiente altamente agresivo \citep{EN206,ConcreteSociety2006}.
+    
+    \item Para este caso, una especificación por desempeño para exposición severa debe asegurar: (i) \textit{durabilidad} frente a sulfatos (p.ej., expansión $<0{,}05\%$ a seis meses en ensayos acelerados), (ii) \textit{resistencia a compresión} $\geq 40$ MPa a 28 días, (iii) \textit{impermeabilidad} (penetración de agua $\leq 20$ mm bajo presión), (iv) \textit{resistencia química} con pérdidas de resistencia $<20\%$ frente a soluciones de sulfatos, y (v) \textit{control de fisuración} con anchos $\leq 0{,}2$ mm. Complementariamente, modelos de vida útil que consideren transporte iónico y carbonatación permiten proyectar durabilidad $\geq 50$ años \citep{NCh170-2016,ConcreteSociety2006}.
+    
+    \item Una referencia internacional de especificación por desempeño es la norma europea EN 206, que define requisitos de durabilidad y resistencia por clase de exposición. Un caso emblemático es el Puente de Oresund (Dinamarca–Suecia), con ambiente marino severo: se exigió resistencia característica mínima de 50 MPa, límites a la penetración de cloruros y desempeño satisfactorio en ciclos hielo–deshielo. La especificación es por desempeño porque no fija dosificación ni materiales, sino criterios medibles. La verificación incluyó ensayos acelerados de cloruros, resistividad eléctrica y compresión a 28 y 90 días, garantizando vida útil y seguridad estructural en ambiente agresivo \citep{EN206,ConcreteSociety2006}.
 \end{enumerate}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
